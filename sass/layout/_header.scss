@@ -1,0 +1,150 @@
+.header {
+    height: 6rem;
+    width: 100%;
+    // margin-left: 9px;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    top: -25px;
+    background: $color-primary;
+
+    position: fixed;
+    z-index: 100;
+
+    ul {
+        list-style: none;
+
+        @include respond(tab-port) {
+            float: right;
+        }
+
+        @include respond(tab-land) {
+            float: right;
+        }
+    }
+
+    li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+
+            @include respond(tab-land) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .logo {
+        @include respond(tab-port) {
+            position: fixed !important;
+            left: 60px !important;
+            top: 25px !important;
+        }
+
+        @include respond(tab-land) {
+            position: fixed !important;
+            left: 75px !important;
+            top: 25px !important;
+        }
+
+        @include respond(desktop){
+            position: fixed !important;
+            left: 40px !important;
+            top: 25px !important;    
+        }
+        img {
+            margin-bottom: 5px !important;
+        }
+    }
+
+    &-search {
+        margin-left: 5.4rem;
+
+        @include respond(tab-land) {
+            margin-left: -20rem;
+        }
+
+        @include respond(desktop) {
+            display: none !important;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+
+    &-user-tool {
+        margin-right: 0 !important;
+
+
+        &-heart {
+            margin-left: 20px !important;
+
+            @include respond(tab-port) {
+                margin-left: -15% !important;
+            }
+
+            @include respond(tab-land) {
+                margin-left: 0 !important;
+            }
+
+            @include respond(desktop) {
+                display: none !important;
+            }
+
+
+            img {
+                margin-bottom: 3px;
+            }
+        }
+
+        &-notification {
+            position: absolute;
+            margin-top: 8px;
+            margin-left: -5px;
+
+            @include respond(desktop) {
+                display: none !important;
+            }
+            &-text {
+                font-size: 10px;
+
+                font-weight: 300;
+                color: $color-white;
+
+                @include respond(tab-port) {
+                    font-size: 12px;
+                }
+
+                @include respond(tab-land) {
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        &-bag {
+            
+            @include respond(desktop) {
+                display: none !important;
+            }
+            img {
+                margin-bottom: 3px;
+
+            }
+        }
+
+    }
+
+}
+
+.sticky .header {
+    background-color: white;
+
+    .header-user-tool-notification-text {
+        color: black;
+    }
+}

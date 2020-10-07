@@ -1,0 +1,277 @@
+.menu {
+
+    margin-top: 20%;
+    text-align: center;
+
+    &-user-tool {
+        @include respond(tab-port) {
+            display: none;
+        }
+
+        @include respond(tab-land) {
+            display: none;
+        }
+
+        @include respond(desktop) {
+            display: none;
+        }
+
+        margin-top: 7rem;
+        height: 120px;
+        width: 100%;
+        border: 1px solid $color-white;
+        background-color: $color-primary;
+
+        .border {
+            border-right: 1px solid $color-white !important;
+        }
+
+        &-item {
+            margin-left: -4px;
+            margin-top: -70px;
+            height: 120px;
+            width: 100px;
+            position: relative;
+
+            .active {
+                margin-left: 20px !important;
+            }
+
+
+            &-icon img {
+                position: absolute;
+                margin-top: 40px;
+                margin-left: -20px;
+            }
+
+            &-text {
+                position: absolute;
+                margin-top: 80px;
+                margin-left: 28px;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 300;
+                line-height: 16px;
+                color: #e2e2e2;
+                font-family: "Open Sans";
+
+            }
+        }
+
+        &-item-bag-notification {
+
+            margin-top: 55px;
+            position: absolute;
+            margin-left: 40px;
+            border: 1px solid $color-secondary;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            text-align: center;
+            background: $color-secondary;
+            color: black;
+            font-size: 10px;
+            font-weight: 300;
+        }
+    }
+
+    &-links {
+        a {
+            text-decoration: none;
+        }
+
+        position: absolute;
+        top: 73%;
+
+        margin-left:25%;
+        margin-right: 25%;
+
+        @include respond(tab-port) {
+            margin-left: 40%;
+            margin-right: auto;
+            font-size: 16px;
+        }
+
+        @include respond(tab-land) {
+            margin-left: 40%;
+            margin-right: auto;
+            font-size: 16px;
+        }
+
+        @include respond(desktop) {
+            position: fixed;
+            top: 70%;
+            left: 40px;
+            margin-left: 0;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+
+        .language {
+            color: $color-white;
+
+            @include respond(desktop) {
+                a{
+                    color: black;
+                    font-size: 16px;
+                    line-height: 13px;
+                }
+            }
+        }
+
+        .language-english {
+            color: grey;
+        }
+
+        .store-locator {
+            color: $color-white;
+
+            @include respond(desktop) {
+                color: black;
+                font-size: 16px;
+                line-height: 13px;
+            }
+        }
+
+        .arrow-icon {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+
+.newsletter {
+    position: absolute;
+    top: 81%;
+    margin-left: 20%;
+
+    @include respond(tab-port) {
+        margin-left: 32%;
+        margin-right: auto;
+    }
+
+    @include respond(tab-land) {
+        margin-left: 32%;
+        margin-right: auto;
+    }
+
+    @include respond(desktop) {
+        position: fixed;
+        top: 80%;
+        left: 40px;
+        margin: 0;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    a {
+        @include respond(desktop) {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    margin-right: 20%;
+    text-align: center;
+
+    &-text {
+        font-size: 12px;
+
+        @include respond(tab-land) {
+            font-size: 16px;
+        }
+
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+
+        @include respond(desktop) {
+            color: black;
+            line-height: 12px;
+            font-size: 16px;
+        }
+    }
+
+    input[type=text] {
+        border: 1px solid $color-white;
+        background: transparent;
+        padding: 6px;
+        color: white;
+
+        @include respond(desktop) {
+            //            background: white;
+            border: 1px solid gray;
+            color: black;
+
+        }
+
+    }
+
+    .arrow {
+        border: 1px solid $color-white;
+        font-size: 22px;
+        line-height: 28px;
+        top: 20px;
+
+        @include respond(tab-port) {
+            top: 0px;
+        }
+
+        @include respond(tab-land) {
+            top: 0px;
+        }
+
+        @include respond(desktop) {
+            top: 22px;
+            background-color: gray;
+            border: 1px solid gray;
+
+            color: white;
+        }
+
+        position: absolute;
+        background-color: $color-white;
+        color: black;
+    }
+}
+
+.social {
+    position: absolute;
+    top: 92%;
+    margin-left: 33%;
+    margin-right: 33%;
+
+    @include respond(tab-port) {
+        margin-left: 42%;
+        margin-right: auto;
+    }
+
+    @include respond(tab-land) {
+        margin-left: 42%;
+        margin-right: auto;
+    }
+
+    @include respond(desktop) {
+        top: 90%;
+        left: 40px;
+        margin: 0;
+    }
+
+    &-icon-list {
+        list-style: none;
+
+        &-item {
+            display: inline-block;
+
+            @include respond(desktop) {}
+        }
+    }
+
+}

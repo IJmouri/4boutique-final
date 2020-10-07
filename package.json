@@ -1,0 +1,16 @@
+{
+  "name": "4boutique",
+  "version": "1.0.0",
+  "description": "Landing page for mobile-portrait",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "Mouri",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+
+}

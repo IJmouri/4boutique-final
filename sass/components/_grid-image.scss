@@ -1,0 +1,287 @@
+.grid-image-row {
+    //  max-width: 36rem;
+
+    [class^="col-"] {
+        &:not(:last-child) {
+            float: left;
+            //  margin-right: $gutter-horizontal;
+        }
+
+        &:last-child {
+            float: right;
+            //   margin-right: $gutter-horizontal;
+
+        }
+    }
+
+    @include clearfix;
+
+
+    [class^="col-"] {
+        width: 100%;
+    }
+
+    @include respond(tab-port) {
+        .col-1-of-2-big-image {
+            width: calc(100%/ 2);
+        }
+
+        .col-1-of-3-square-image {
+            width: calc((100%)/ 3);
+        }
+
+    }
+
+    @include respond(tab-land) {
+        max-width: 100%;
+
+        .col-1-of-2-big-image {
+            width: calc(100%/ 2);
+            padding: 10px;
+        }
+
+        .col-1-of-3-square-image {
+            width: calc((100%)/ 3);
+            padding: 10px;
+        }
+
+    }
+    @include respond(desktop) {
+        max-width: 100%;
+
+        .col-1-of-2-big-image {
+            width: calc(100%/ 2);
+            padding: 10px;
+        }
+
+        .col-1-of-3-square-image {
+            width: calc((100%)/ 3);
+            padding: 10px;
+        }
+
+    }
+}
+
+.big-image {
+
+    background-color: #999999;
+    width: 100%;
+    height: 300px;
+    
+    @include respond(tab-land){
+        height: 388px;
+    }
+    @include respond(desktop){
+        height: 460px;
+    }
+
+    position: relative;
+    border: 1px solid $color-white;
+
+    &-text {
+        color: $color-white;
+        margin-top: 30%;
+
+        @include respond(desktop){
+            margin-top: 45%;
+        }
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+
+    &-aside-1 {
+        @include respond(tab-land){
+            padding: 10px;
+        }
+        @include respond(desktop){
+            padding: 10px;
+        }
+
+        &-image {
+            background-color: #c8a985;
+            width: 100%;
+            height: 180px;
+
+            @include respond(tab-port) {
+                height: 150px;
+            }
+            @include respond(desktop) {
+                height: 215px;
+            }
+
+            position: relative;
+            border: 1px solid $color-white;
+        }
+
+        &-text {
+            color: $color-white;
+            margin-top: 10%;
+
+            @include respond(tab-port) {
+                margin-bottom: 10px;
+                font-size: 20px;
+                line-height: 20px;
+
+            }
+
+            margin-left: 5%;
+            margin-right: 50%;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    &-aside-2 {
+
+        @include respond(tab-land){
+            padding: 10px;
+        }
+        @include respond(desktop){
+            padding: 10px;
+        }
+        &-image {
+            background-color: #f0e3cc;
+            width: 100%;
+            height: 180px;
+
+            @include respond(tab-port) {
+                height: 150px;
+            }
+
+            @include respond(desktop) {
+                height: 215px;
+            }
+
+
+            position: relative;
+            border: 1px solid $color-white;
+        }
+
+        &-text {
+            color: $color-white;
+            margin-top: 10%;
+
+            @include respond(tab-port) {
+                margin-bottom: 10px;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            margin-left: 50%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+.square-image {
+    .image-square-1 {
+        &-image {
+            background-color: #999999;
+            width: 100%;
+            height: 300px;
+
+            @include respond(tab-port) {
+                height: 280px;
+            }
+            @include respond(desktop) {
+                height: 350px;
+            }
+
+            position: relative;
+            border: 1px solid $color-white;
+        }
+
+        &-text {
+            color: $color-white;
+            margin-top: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .image-square-2 {
+        &-image {
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 300px;
+
+            @include respond(tab-port) {
+                height: 280px;
+            }
+            @include respond(desktop) {
+                height: 350px;
+            }
+
+            position: relative;
+            border: 1px solid $color-white;
+        }
+
+        &-text {
+            color: $color-white;
+            margin-top: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .image-square-3 {
+        &-image {
+            background-color: #cccccc;
+            width: 100%;
+            height: 300px;
+
+            @include respond(tab-port) {
+                height: 280px;
+            }
+            @include respond(desktop) {
+                height: 350px;
+            }
+
+            position: relative;
+            border: 1px solid $color-white;
+        }
+
+        &-text {
+            color: $color-white;
+            margin-top: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+    }
+}

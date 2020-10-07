@@ -1,0 +1,38 @@
+.row {
+    max-width: 36rem;
+    // background-color: #eee;
+   // margin: 0 auto;
+
+    &:not(:last-child) {
+      //  margin-bottom: $gutter-vertical;
+    }
+
+    [class^="col-"] {
+
+        &:not(:last-child) {
+            float: left;
+        //    margin-right: $gutter-horizontal;
+        }
+
+        &:last-child {
+            float: right;
+        }
+    }
+
+    @include clearfix;
+    
+    @media screen and (max-width:600px) {
+        [class^="col-"]{
+            width: 100% !important;
+        }
+    }
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal})/ 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal})/ 3);
+    }
+
+    
+}
