@@ -9,7 +9,7 @@
 //media queries
 @mixin respond($breakpoint) {
     @if $breakpoint == tab-port {
-        @media (min-width:425px) and (max-width: 900px) {
+        @media (min-width:400px) and (max-width: 900px) {
             @content
         };
     }

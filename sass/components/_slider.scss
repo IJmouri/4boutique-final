@@ -1,36 +1,52 @@
 .slider {
-
-    @include respond(tab-land){
-       display: none;
-    }
-    @include respond(desktop){
-       display: none;
-    }
-
     height: 64rem;
-
-    @include respond(tab-port){
-        height: 40vh;
-    }
     width: 100%;
+
+    @include respond(tab-land) {
+        display: none;
+    }
+
+    @include respond(desktop) {
+        display: none;
+    }
+
+
+    @include respond(tab-port) {
+        height: 50vh;
+    }
+
     background-color: $color-primary;
     position: relative;
 
     &-text-area {
         position: absolute;
-        margin-top: 70%;
-
-        @include respond(tab-port){
-            margin-top: 23%;
-            margin-left: 25%;
-         }
-
-        margin-left: 20%;
-        margin-right: 20%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
 
+        &-tab-port-text {
+            display: none;
+
+            @include respond(tab-port) {
+                display: block;
+                color: $color-white;
+                text-transform: uppercase;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+        }
+
+
         &-text {
-            font-size: 32px;
+            font-size: 26px;
+
+            @include respond(tab-port) {
+                font-size: 30px;
+                margin-bottom: 10px;
+                line-height: 30px;
+            }
+
             font-weight: 400;
             text-transform: uppercase;
             color: $color-white;
@@ -50,21 +66,17 @@
     &-indicators {
 
         position: absolute;
-        margin-top: 50rem;
-        margin-left: 40%;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
 
-        @include respond(tab-port){
-            margin-left: 45%;
-            margin-top: 30rem;
-        }
-        margin-right: 30%;
         &-list {
             &-all {
                 list-style: none;
 
                 li {
                     display: inline-block;
-                    margin-bottom: 6px;    
+                    margin-bottom: 6px;
                 }
 
             }
@@ -72,16 +84,13 @@
         }
 
     }
-    &-icon-arrow-down{
-        position: absolute;
-        top: 58rem;
-        margin-left: 45%;
-        @include respond(tab-port){
-            margin-left: 50%;
-            margin-top: -20rem;
-         }
-    }
 
+    &-icon-arrow-down {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
 }
 
@@ -91,13 +100,14 @@
     width: 5px;
     height: 5px;
 
-    &:not(:first-child){
+    &:not(:first-child) {
         margin-bottom: 10px;
         background-color: $color-white;
     }
+
     margin-right: 6px;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
         margin-right: 12px;
     }
 

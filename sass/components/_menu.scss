@@ -81,44 +81,46 @@
         }
 
         position: absolute;
-        top: 73%;
-
-        margin-left:25%;
-        margin-right: 25%;
-
-        @include respond(tab-port) {
-            margin-left: 40%;
-            margin-right: auto;
-            font-size: 16px;
-        }
-
-        @include respond(tab-land) {
-            margin-left: 40%;
-            margin-right: auto;
-            font-size: 16px;
-        }
-
-        @include respond(desktop) {
-            position: fixed;
-            top: 70%;
-            left: 40px;
-            margin-left: 0;
-            text-align: left;
-            font-size: 14px;
-        }
-
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 400;
 
-        .language {
-            color: $color-white;
+        @include respond(tab-port) {
+            top: 60%;
+            font-size: 16px;
+        }
 
+        @include respond(tab-land) {
+            top: 65%;
+            font-size: 16px;
+        }
+
+        @include respond(desktop) {
+            position: fixed;
+            top: 65%;
+            left: 40px;
+            margin-left: 0;
+            text-align: left;
+            font-size: 14px;
+            transform: translateX(0);
+        }
+
+
+        .language {
+            a{
+                color: $color-white;
+            }
+            @include respond(tab-port){
+                font-size: 16px;
+            }
             @include respond(desktop) {
-                a{
+                a {
                     color: black;
-                    font-size: 16px;
+                    font-size: 12px;
                     line-height: 13px;
                 }
             }
@@ -133,8 +135,8 @@
 
             @include respond(desktop) {
                 color: black;
-                font-size: 16px;
-                line-height: 13px;
+                font-size: 12px;
+                line-height: 12px;
             }
         }
 
@@ -148,29 +150,45 @@
 
 .newsletter {
     position: absolute;
-    top: 81%;
-    margin-left: 20%;
+    top: 80%;
+//    margin-left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 
     @include respond(tab-port) {
-        margin-left: 32%;
-        margin-right: auto;
+        margin: 0;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @include respond(tab-land) {
-        margin-left: 32%;
-        margin-right: auto;
+        margin: 0;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @include respond(desktop) {
         position: fixed;
-        top: 80%;
+        top: 75%;
         left: 40px;
         margin: 0;
         text-align: left;
         font-size: 14px;
+        transform: translateX(0);
     }
 
     a {
+        @include respond(tab-port){
+            display: block;
+            margin-bottom: 10px;        
+        }
+        @include respond(tab-land){
+            display: block;
+            margin-bottom: 10px;
+        
+        }
         @include respond(desktop) {
             display: block;
             margin-bottom: 10px;
@@ -183,6 +201,9 @@
     &-text {
         font-size: 12px;
 
+        @include respond(tab-port) {
+            font-size: 16px;
+        }
         @include respond(tab-land) {
             font-size: 16px;
         }
@@ -195,7 +216,7 @@
         @include respond(desktop) {
             color: black;
             line-height: 12px;
-            font-size: 16px;
+            font-size: 12px;
         }
     }
 
@@ -206,10 +227,8 @@
         color: white;
 
         @include respond(desktop) {
-            //            background: white;
             border: 1px solid gray;
             color: black;
-
         }
 
     }
@@ -221,11 +240,11 @@
         top: 20px;
 
         @include respond(tab-port) {
-            top: 0px;
+            top: 37px;
         }
 
         @include respond(tab-land) {
-            top: 0px;
+            top: 37px;
         }
 
         @include respond(desktop) {
@@ -249,13 +268,19 @@
     margin-right: 33%;
 
     @include respond(tab-port) {
-        margin-left: 42%;
-        margin-right: auto;
+        margin: 0;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+
     }
 
+
     @include respond(tab-land) {
-        margin-left: 42%;
-        margin-right: auto;
+        margin: 0;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @include respond(desktop) {

@@ -8,9 +8,13 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden !important;
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+
     font-family: "Segoe UI";
     font-weight: 400;
     /* font-size: 16px; */
