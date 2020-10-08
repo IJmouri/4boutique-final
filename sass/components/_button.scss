@@ -2,33 +2,30 @@
     text-decoration: none;
     border: 1px solid $color-white;
 }
+
 .grid-image-btn{
     text-transform: uppercase;
     color: $color-white;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
-    padding: 4px 12px;
-
+    padding: 2px 10px;
 }
+
 .big-image-btn{
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translateX(-50%);
-    // @include respond(desktop){
-    //     position: absolute;
-    //     top: 65%;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     margin: 0;
-    // }
 }
-.aside-1-btn{
-    margin-left: 20%;
 
+.aside-1-btn{
+    margin-left: 18%;
+    position: absolute;
+    top: 65%;
+    margin-top: 5px;
 }
+
 .aside-2-btn{
     float: right;
-    margin-right: 15%;
-
+    margin-right: 20%;
 }

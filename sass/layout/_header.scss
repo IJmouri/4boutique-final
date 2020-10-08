@@ -1,23 +1,22 @@
 .header {
     height: 6rem;
     width: 100%;
-    // margin-left: 9px;
     margin-top: 2.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
-
     top: -25px;
     background: $color-primary;
-
     position: fixed;
     z-index: 100;
 
-    @include respond(desktop){
+    @include respond(desktop) {
         margin: 0;
         padding: 0;
+        height: 0;
     }
+
     ul {
+
         list-style: none;
 
         @include respond(tab-port) {
@@ -30,6 +29,7 @@
     }
 
     li {
+
         display: inline-block;
 
         &:not(:last-child) {
@@ -42,6 +42,7 @@
     }
 
     .logo {
+        
         @include respond(tab-port) {
             position: fixed !important;
             left: 60px !important;
@@ -54,11 +55,12 @@
             top: 25px !important;
         }
 
-        @include respond(desktop){
+        @include respond(desktop) {
             position: fixed !important;
             left: 40px !important;
-            top: 35px !important;    
+            top: 22px !important;
         }
+
         img {
             margin-bottom: 5px !important;
         }
@@ -88,7 +90,6 @@
     &-user-tool {
         margin-right: 0 !important;
 
-
         &-heart {
             margin-left: 20px !important;
 
@@ -107,7 +108,6 @@
                 display: none !important;
             }
 
-
             img {
                 margin-bottom: 3px;
             }
@@ -121,6 +121,7 @@
             @include respond(desktop) {
                 display: none !important;
             }
+
             &-text {
                 font-size: 10px;
 
@@ -137,20 +138,21 @@
                     right: 7%;
                     top: 2.5%;
                 }
-
             }
         }
 
         &-bag {
-            
+
             @include respond(desktop) {
                 display: none !important;
             }
-            @include respond(tab-land){
+
+            @include respond(tab-land) {
                 position: fixed;
                 right: 9%;
                 top: 2%;
             }
+
             img {
                 margin-bottom: 3px;
             }

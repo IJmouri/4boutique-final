@@ -50,7 +50,7 @@
 
         @include respond(desktop) {
             opacity: 1;
-            width: 100%;
+            width: 270px;
         }
 
         transition: all .8s;
@@ -71,9 +71,11 @@
         @include respond(tab-port) {
             top: 35%;
         }
+
         @include respond(tab-land) {
             top: 35%;
         }
+
         @include respond(desktop) {
             position: fixed;
             top: 20%;
@@ -97,7 +99,7 @@
             color: $color-white;
 
             @include respond(desktop) {
-                color: $text-color;
+                color: $gray-color;
                 line-height: 14px;
                 letter-spacing: 1px;
                 font-size: 12px;
@@ -236,13 +238,70 @@
 }
 
 .search-menu {
-    position: absolute;
-    margin-left: 85%;
-    margin-top: 1.1rem;
+    position: fixed;
+    right: 10px;
+    top: 10px;
 
     @include respond(desktop) {
         display: none;
     }
+
+    @include respond(tab-port) {
+        right: 115px;
+    }
+
+    @include respond(tab-land) {
+        right: 115px;
+    }
+}
+
+.heart-menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 65px;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    @include respond(tab-land) {
+        display: block;
+    }
+}
+
+.bag-menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    @include respond(tab-land) {
+        display: block;
+    }
+
+    &-text {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 32px;
+        color: $color-secondary;
+        font-size: 12px;
+
+        @include respond(tab-port) {
+            display: block;
+        }
+
+        @include respond(tab-land) {
+            display: block;
+        }
+
+    }
+
 }
 
 .navigation_item-bottom {
