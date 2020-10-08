@@ -191,7 +191,17 @@ body {
     font-size: 12px;
     font-weight: 400; }
     .menu-links a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 12px; }
+      .menu-links a:link, .menu-links a:visited {
+        color: #ffffff; }
+        @media (min-width: 1201px) and (max-width: 1440px) {
+          .menu-links a:link, .menu-links a:visited {
+            color: black; } }
+      @media (min-width: 1201px) and (max-width: 1440px) {
+        .menu-links a {
+          font-size: 12px; } }
     @media (min-width: 426px) and (max-width: 900px) {
       .menu-links {
         top: 60%;
@@ -207,24 +217,13 @@ body {
         left: 40px;
         margin-left: 0;
         text-align: left;
-        font-size: 14px;
-        transform: translateX(0); } }
-    .menu-links .language a {
-      text-decoration: none; }
-      .menu-links .language a:link, .menu-links .language a:visited {
-        color: #ffffff; }
-    @media (min-width: 426px) and (max-width: 900px) {
-      .menu-links .language {
-        font-size: 16px; } }
-    @media (min-width: 1201px) and (max-width: 1440px) {
-      .menu-links .language a:link, .menu-links .language a:visited {
-        color: black;
         font-size: 12px;
-        line-height: 13px; } }
+        transform: translateX(0); } }
     .menu-links .language-english {
       color: grey; }
     .menu-links .store-locator {
-      color: #ffffff; }
+      color: #ffffff;
+      display: block; }
       @media (min-width: 1201px) and (max-width: 1440px) {
         .menu-links .store-locator {
           color: black;
