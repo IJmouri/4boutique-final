@@ -87,7 +87,7 @@
                 }
             }
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 12px;
 
             @include respond(desktop){
@@ -96,7 +96,7 @@
         }
 
         position: absolute;
-        top: 70%;
+        top: 73%;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;

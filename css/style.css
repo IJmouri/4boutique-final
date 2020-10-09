@@ -183,7 +183,7 @@ body {
       font-weight: 300; }
   .menu-links {
     position: absolute;
-    top: 70%;
+    top: 73%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -192,7 +192,7 @@ body {
     font-weight: 400; }
     .menu-links a {
       text-decoration: none;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 12px; }
       .menu-links a:link, .menu-links a:visited {
         color: #ffffff; }
@@ -853,7 +853,7 @@ body {
     .navigation-icon {
       display: none !important; } }
   .navigation-icon, .navigation-icon::before, .navigation-icon::after {
-    width: 3rem;
+    width: 2.5rem;
     height: 2px;
     background-color: grey;
     display: inline-block; }
