@@ -780,7 +780,7 @@ body {
 
 .navigation_list {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -907,7 +907,7 @@ body {
 .search-menu {
   position: fixed;
   right: 10px;
-  top: 10px; }
+  top: 20px; }
   @media (min-width: 1201px) and (max-width: 1440px) {
     .search-menu {
       display: none; } }
