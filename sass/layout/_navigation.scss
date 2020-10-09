@@ -62,7 +62,7 @@
 
     &_list {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         list-style: none;
@@ -94,7 +94,7 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             color: $color-white;
 
@@ -258,7 +258,7 @@
 .heart-menu {
     display: none;
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 65px;
 
     @include respond(tab-port) {
@@ -273,7 +273,7 @@
 .bag-menu {
     display: none;
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 20px;
 
     @include respond(tab-port) {
@@ -287,8 +287,8 @@
     &-text {
         display: none;
         position: fixed;
-        right: 10px;
-        top: 32px;
+        right: 6px;
+        top: 25px;
         color: $color-secondary;
         font-size: 12px;
 

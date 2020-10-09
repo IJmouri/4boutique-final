@@ -204,7 +204,7 @@ body {
           font-size: 12px; } }
     @media (min-width: 426px) and (max-width: 900px) {
       .menu-links {
-        top: 60%;
+        top: 65%;
         font-size: 16px; } }
     @media (min-width: 901px) and (max-width: 1200px) {
       .menu-links {
@@ -780,7 +780,7 @@ body {
 
 .navigation_list {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -804,7 +804,7 @@ body {
 
 .navigation_link:link, .navigation_link:visited {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -921,7 +921,7 @@ body {
 .heart-menu {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 65px; }
   @media (min-width: 426px) and (max-width: 900px) {
     .heart-menu {
@@ -933,7 +933,7 @@ body {
 .bag-menu {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 20px; }
   @media (min-width: 426px) and (max-width: 900px) {
     .bag-menu {
@@ -944,8 +944,8 @@ body {
   .bag-menu-text {
     display: none;
     position: fixed;
-    right: 10px;
-    top: 32px;
+    right: 6px;
+    top: 25px;
     color: #c8a985;
     font-size: 12px; }
     @media (min-width: 426px) and (max-width: 900px) {
