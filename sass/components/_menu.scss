@@ -17,7 +17,7 @@
             display: none;
         }
 
-        margin-top: 7rem;
+        margin-top: 6rem;
         height: 120px;
         width: 100%;
         border: 1px solid $color-white;
@@ -106,12 +106,12 @@
 
         @include respond(tab-port) {
             top: 65%;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         @include respond(tab-land) {
             top: 65%;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         @include respond(desktop) {
@@ -198,11 +198,11 @@
         color: $color-white;
 
         @include respond(tab-port) {
-            font-size: 16px;
+            font-size: 14px;
         }
 
         @include respond(tab-land) {
-            font-size: 16px;
+            font-size: 14px;
         }
 
         @include respond(desktop) {
@@ -231,11 +231,11 @@
         top: 20px;
 
         @include respond(tab-port) {
-            top: 37px;
+            top: 33px;
         }
 
         @include respond(tab-land) {
-            top: 37px;
+            top: 33px;
         }
 
         @include respond(desktop) {

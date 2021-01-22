@@ -112,12 +112,12 @@
 
             @include respond(tab-port) {
                 line-height: 30px;
-                font-size: 20px;
+                font-size: 14px;
             }
 
             @include respond(tab-land) {
                 line-height: 30px;
-                font-size: 20px;
+                font-size: 14px;
             }
 
             //         transition: all .4s;
@@ -165,7 +165,7 @@
         &,
         &::before,
         &::after {
-            width: 2.5rem;
+            width: 2.6rem;
             height: 2px;
             background-color: grey;
             display: inline-block;
